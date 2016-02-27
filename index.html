@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DLevin Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+<link href="styles/normalize.css" rel="stylesheet" type="text/css">
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+<link href="styles/swiper.min.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="scripts/default.js"></script>
+</head>
+<body>
+<div id="loader"></div>
+<div id="wrapper">
+  <header>
+    <div id="page_title">
+      <h1>Dennis Levin Photography</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#gallery-container">Gallery</a></li>
+        <li class="fade">|</li>
+        <li><a href="#about">About</a></li>
+        <li class="fade">|</li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="center_button"><a href="#main" id="scroll_link">Scroll</a></div>
+  </header>
+  <div id="content">
+    <div id="main">
+      <div class="landing">
+        <h2><span class="left_quote">“</span>The world's big and I want to have a good look at it before it gets dark<span class="right_quote">”</span></h2>
+        <h3>&mdash;John Muir</h3>
+        <hr>
+        <p>A collection of landscapes from around the United States; a result of hundreds of miles of hiking, climbing, and exploring.</p>
+      </div>
+    </div>
+    <div id="gallery-container">
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_adams.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_badlands.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_baker.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_cascades.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_denali.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_enchantments.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_hawaii.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_olympics.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_rainier.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_tetons.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_yellowstone.jpg"></a></div>
+      <div class="gallery_image"><a href="#" class="img_link"><img src="images/gallery-thumbs/thumb_yosemite.jpg"></a></div>
+    </div>
+    <div id="swiper">
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(images/gallery-thumbs/thumb_adams.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/gallery-thumbs/thumb_badlands.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/gallery-thumbs/thumb_baker.jpg)"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+      <!-- Swiper JS -->
+      <script src="scripts/swiper.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        spaceBetween: 30,
+                        effect: 'fade'
+                    });
+                </script>
+    </div>
+  </div>
+  <footer>
+    <div class="social facebook"><a href="https://www.facebook.com/dennis.levin.5" target="_blank"></a></div>
+    <div class="social twitter"><a href="https://twitter.com/DennisLevin" target="_blank"></a></div>
+    <div class="social instagram"><a href="https://instagram.com/d_levin/" target="_blank"></a></div>
+    <div class="social linkedin"><a href="https://www.linkedin.com/in/dennislevin" target="_blank"></a></div>
+  </footer>
+</div>
+</body>
+</html>

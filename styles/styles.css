@@ -1,0 +1,346 @@
+﻿@charset "UTF-8";
+
+/* CSS Document */
+
+/*
+Free fonts
+https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans
+https://www.google.com/fonts#UsePlace:use/Collection:PT+Sans
+Recommended pairings with Josefin Slab: Open Sans, Pacifico, Oswald
+https://www.google.com/fonts#UsePlace:use/Collection:Oswald
+*/
+
+*, *:after, *:before {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body, #wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 100%;
+	background-color: #ECECEC;
+}
+
+#loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loader.GIF) 50% 50% no-repeat #0195FF;
+}
+
+header {
+	width: 100%;
+	height: 100%;
+	background: url(../images/header/sunrise_hdr.jpg) center center no-repeat scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 1;
+}
+
+#page_title {
+	background-color: rgba(1,149,255,0.2);
+	color: #ffffff;
+	padding: 0.875em;
+	opacity: 1;
+	text-transform: uppercase;
+}
+
+#page_title h1 {
+	margin: 0;
+	font-size: 2.5em;
+	font-weight: 600;
+	text-align: center;
+	font-family: 'Josefin Slab', serif;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+}
+
+.nav_bg {
+	background-color: rgba(13, 13, 13, 0.80);
+}
+
+.fade {
+	opacity: 0.4;
+}
+
+nav {
+	background-color: rgba(255,255,255,0.15);
+	padding: 1.5em 2.5em;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 100;
+	transition: background-color 0.5s;
+	color: #FFFFFF;
+	font-weight: 300;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	padding-right: 1em;
+}
+
+nav li:first-child {
+	padding-left: 0;
+}
+
+nav li:last-child {
+	padding-right: 0;
+}
+
+nav a {
+	color: #FFFFFF;
+	font-weight: 300;
+	text-decoration: none;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+nav a:hover {
+	color: #F68827;
+}
+
+.center_button {
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+}
+
+#scroll_link {
+	border: 0.125em solid #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+	display: block;
+	background: url(../images/down_arrow.png) center 2.5em no-repeat;
+	background-size: 1em;
+	background-color: rgba(170,170,170,0.2);
+	padding: 1.2em 2.5em 2em 2.5em;
+	opacity: 1;
+	-webkit-transition: border 0.5s, background-color 0.5s;
+	transition: border 0.5s, background-color 0.5s;
+}
+
+#scroll_link:hover {
+	border-color: #F68827;
+	background-color: rgba(234,234,234,0);
+}
+
+#content {
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
+	margin: 0 auto;
+	background: rgba(255,255,255,0.4);
+}
+
+#content, footer {
+	max-width: 1440px;
+}
+
+#main {
+	padding: 15em 0;
+}
+
+.landing hr {
+	border: 0;
+	width: 6em;
+	height: 0.0625em;
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.landing {
+	margin: 0 auto;
+	text-align: center;
+	color: #923A3B;
+	text-transform: uppercase;
+}
+
+.landing h2, h3 {
+	margin: 0.5em;
+	font-weight: 300;
+	color: #333333;
+}
+
+.landing h2 {
+	font-size: 2.8em;
+	line-height: 1.8em;
+}
+
+.landing h3 {
+	font-size: 1.5em;
+	padding-bottom: 3em;
+}
+
+.landing p {
+	padding-top: 4em;
+	width: 15em;
+	margin: 0em auto;
+	line-height: 1.8em;
+}
+
+.landing .left_quote, .right_quote {
+	font-weight: 400;
+}
+
+.landing .left_quote {
+	padding-right: 0.2em;
+}
+
+.landing .right_quote {
+	padding-left: 0.2em;
+}
+
+#gallery-container {
+	width: 100%;
+	overflow: auto;
+	padding-top: 4.125em;
+	display: flex;
+	display: -webkit-flex; /* Safari */
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap; /* Safari */
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+#gallery-container .img_link, img {
+	width: 100%;
+}
+
+.gallery_image {
+	width: 33.33339%;
+	height: auto;
+	position: relative;
+	background-color: #333333;
+}
+
+.gallery_image img {
+	height: auto;
+	display: block;
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.gallery_image img:hover {
+	opacity: 0.8;
+}
+
+footer {
+	padding: 4em 0.5em;
+	background-color: #333333;
+	color: #FFFFFF;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.85em;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+footer .social {
+	display: inline-block;
+	height: 3em;
+	width: 3em;
+	margin: 0 0.3em;
+	transition: opacity 0.5s;
+	opacity: 1;
+}
+
+footer .social:hover {
+	opacity: 0.7;
+}
+
+footer .facebook {
+	background: url(../images/social/facebook.png) no-repeat;
+	background-size: contain;
+}
+
+footer .twitter {
+	background: url(../images/social/twitter.png) no-repeat;
+	background-size: contain;
+}
+
+footer .instagram {
+	background: url(../images/social/instagram.png) no-repeat;
+	background-size: contain;
+}
+
+footer .linkedin {
+	background: url(../images/social/linkedin.png) no-repeat;
+	background-size: contain;
+}
+
+footer .social a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* Swiper Styles */
+#swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+}
+
+/* iPhone 4/4S */
+/*@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+body {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+#scroll {
+	visibility: hidden;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav li {
+	display: block;
+	padding-right: 0;
+}
+}
+*/
